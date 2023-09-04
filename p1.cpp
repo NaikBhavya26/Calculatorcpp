@@ -1,42 +1,38 @@
-// C++ program to create calculator using
-// switch statement
 #include <iostream>
 using namespace std;
 
-// Driver code
 int main()
 {
 	char op;
-	float num1, num2;
+	float no1, no2;
+    
+    cin>>no1>>op>>no2;
+	
+    
 
-	// It allows user to enter operator
-	// i.e. +, -, *, /
-	cin >> op;
+	
+	 
 
-	// It allow user to enter the operands
-	cin >> num1 >> num2;
-
-	// Switch statement begins
 	switch (op)
 	{	
 		// If user enter +
 		case '+':
-			cout << num1 + num2;
+			cout << "The sum of the numbers is ="<< no1 + no2;
 			break;
 		
 		// If user enter -
 		case '-':
-			cout << num1 - num2;
+			cout <<"The subtraction of the numbers is ="<< no1 - no2;
 			break;
 		
 		// If user enter *
 		case '*':
-			cout << num1 * num2;
+			cout <<"The multiplication of the numbers is ="<< no1 * no2;
 			break;
 		
 		// If user enter /
 		case '/':
-			cout << num1 / num2;
+			cout <<"The division of the numbers is ="<< no1 / no2;
 			break;
 		
 		// If the operator is other than +, -, * or /,
